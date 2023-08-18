@@ -14,6 +14,7 @@ app.use(express.json());
 
 //rutas
 app.use("/api/usuarios", require("./routes/usuarios"));
+app.use("/api/login", require("./routes/auth"));
 
 app.listen(process.env.PORT, () => {
   console.log("servidor4 corriendo en puerto: " + process.env.PORT);
